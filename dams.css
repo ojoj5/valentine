@@ -1,0 +1,51 @@
+ section {   
+            margin-top: 200px;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+        }
+body{
+background-image: url("dams.gif");
+}
+button {
+            color: black;
+            font-size: 15px;
+            padding: 5px;
+
+        }
+ #No {
+    margin-top: 10px;
+            background-color: red;
+            margin-left: 5px;
+            position: fixed;
+        }
+
+        #Yes:hover {
+            background-color: violet;
+            animation: pulse 0.5s infinite;
+            color: red;
+        }
+
+        #Yes {
+            
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 10px;
+            animation: pulse 0.5s infinite;
+            background-color: red;
+             box-shadow: 0 0 10px palevioletred, 0 0 20px palevioletred, 0 0 50px #764ba2;
+
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }

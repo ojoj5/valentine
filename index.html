@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="dams.css">
+    <title>Valentines Card</title>
+     
+     
+</head>
+<body>
+    <section>
+        <h1>Can you be my valentine?</h1>
+        <img src="cat.webp" alt="norp" height="100" width="100">
+        <br>
+        
+    
+    
+    
+    <button id="Yes">Yes</button>
+    <button id="No">No</button>
+    
+    </section>
+ <script>
+        document.getElementById("Yes").addEventListener("click", function () {
+            alert("I love you! See you soon ❤️");
+        });
+        var b = document.getElementById("No")
+        b.addEventListener("mouseenter", change);
+        function change() {
+
+            
+            var maxX = window.innerWidth - b.offsetWidth;
+            var maxY = window.innerHeight - b.offsetHeight;
+
+            
+            if (maxX < 0) maxX = 0;
+            if (maxY < 0) maxY = 0;
+
+            var i = Math.random() * maxX;
+            var j = Math.random() * maxY;
+
+            b.style.left = i + "px";
+            b.style.top = j + "px";
+        }
+    </script>
+</body>
+</html>
